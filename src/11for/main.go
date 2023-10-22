@@ -34,4 +34,13 @@ func main() {
 	for k, v := range s {
 		fmt.Printf("%d %c\n", k, v)
 	}
+
+	// 流程控制跳出循环
+	for i := 0; i < 10; i++ {
+		if i == 5 {
+			break
+		}
+		fmt.Println(i)
+	}
+	fmt.Println("over")
 }
